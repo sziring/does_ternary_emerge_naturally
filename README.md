@@ -21,6 +21,8 @@ This research definitively demonstrates that **computational paradigms are const
 
 **Scientific Conclusion**: Binary computation's dominance reflects intrinsic optimization advantages under realistic physical constraints, not historical accident.
 
+**How and why we got here** a through experiment to see what might be possible if just one non scientific person could interface with the AI of today back then. Start with the very basic discoveries of gates, binary, ternary, etc.. and see where it takes them. Could a new more efficient path be discovered using analog or something else? Was binary the easier choice or the most scientific efficient one? Could all of these power hungry computers have been created more efficiently. After all, we humans only require about 20 watts to run.
+
 ## 🏗️ Architecture
 
 ```
@@ -205,10 +207,10 @@ This research demonstrates the democratization of computational science through 
 - **Human coordination**: Research design, scientific interpretation, validation
 
 ### "Vibe Coding" Methodology
-- **Rapid prototyping**: Full physics engine developed in weeks
+- **Rapid prototyping**: Full physics engine developed in weeks (part-time)
 - **Iterative refinement**: AI-assisted debugging and optimization
 - **Statistical rigor**: Automated validation with confidence intervals
-- **Cost efficiency**: ~$20 in AI subscriptions for publication-quality research
+- **Cost efficiency**: ~$20 per AI subscription for publication-quality research, existing PC for executing the tests
 
 ### Democratization Impact
 This project illustrates how AI assistance enables non-specialists to:
