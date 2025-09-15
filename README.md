@@ -21,7 +21,10 @@ This research definitively demonstrates that **computational paradigms are const
 
 **Scientific Conclusion**: Binary computation's dominance reflects intrinsic optimization advantages under realistic physical constraints, not historical accident.
 
-**How and why we got here** a through experiment to see what might be possible if just one non scientific person could interface with the AI of today back then. Start with the very basic discoveries of gates, binary, ternary, etc.. and see where it takes them. Could a new more efficient path be discovered using analog or something else? Was binary the easier choice or the most scientific efficient one? Could all of these power hungry computers have been created more efficiently. After all, we humans only require about 20 watts to run.
+**How we got here**
+This project began as a counterfactual thought experiment: what if an individual, armed with today’s AI tools, could have guided the earliest discoveries in computing? Starting with the foundational choices of logic gates, binary versus ternary representation, and the role of analog substrates, we asked whether alternative paths might have been discovered. Was binary chosen simply because it was easier to implement with mid-20th-century technology, or because it is inherently the most efficient paradigm? Could alternative architectures — ternary, analog, or hybrid — have produced more energy-efficient computation?
+
+These questions are not purely historical. Modern digital systems consume gigawatts globally, while the human brain achieves extraordinary computational capacity at approximately 20 watts. This contrast motivates revisiting the foundations of computational paradigms to understand whether binary dominance reflects deep optimization principles or contingent engineering choices.
 
 ## 🏗️ Architecture
 
