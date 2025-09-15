@@ -1,0 +1,50 @@
+# Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=ga             --sweep-fitness=reg             --sweep-stdout=summary
+# Started: Mon Sep 15 10:30:27 EDT 2025
+# Git commit: 4cd409752faea256b4b05f71df1f0c866da37da7
+# Seeds: 100
+
+AI Ground-Up Computing Research
+================================
+Using 24 CPU cores
+
+energy_knobs: ENERGY_HOLD_SCALE=1.0 ENERGY_SWITCH_SCALE=1.0 LAMBDA_ENERGY=1.0
+Command/s used: ./target/release/ai-ground-up sweep-extended --sweep-allowed=continuous_only --sweep-sigmas=0.1,0.3,0.5 --sweep-energy-zero=0.2,2.0,10.0 --sweep-energy-abs1=1.0 --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100 --energy-model=base --sweep-optimizer=ga --sweep-fitness=reg --sweep-stdout=summary
+--------------------------------------------------
+=== Extended Phase sweep ===
+Repro command: ./target/release/ai-ground-up sweep-extended --sweep-allowed=continuous_only --sweep-sigmas=0.1,0.3,0.5 --sweep-energy-zero=0.2,2.0,10.0 --sweep-energy-abs1=1.0 --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100 --energy-model=base --sweep-optimizer=ga --sweep-fitness=reg --sweep-stdout=summary
+gens=120 pop=40 allowed=["linear", "tanh", "relu", "compressive", "expansive", "saturating"] quant_levels=3 target_states=None mismatch_penalty=0.5 energy_model=base optimizer=ga fitness=reg
+sigmas=[0.1, 0.3, 0.5]
+energy_zero=[0.2, 2.0, 10.0]  energy_abs1=[1.0]
+cells=9
+==============================================================
+CSV_HEADER,sigma,energy_zero,energy_abs1,n_states,state_values
+CSV_ROW,0.100,0.200,1.000,2,[-1.9092413770520191, 0.0] (70/100)
+[1/9] completed
+CSV_ROW,0.100,2.000,1.000,2,[-1.9027538137856015, 0.0] (67/100)
+[2/9] completed
+CSV_ROW,0.100,10.000,1.000,2,[-0.8266372113626815, 0.0] (75/100) [H]
+[3/9] completed
+CSV_ROW,0.300,0.200,1.000,1,[0.0] (64/100)
+[4/9] completed
+CSV_ROW,0.300,2.000,1.000,1,[0.0] (64/100)
+[5/9] completed
+CSV_ROW,0.300,10.000,1.000,1,[0.0] (62/100)
+[6/9] completed
+CSV_ROW,0.500,0.200,1.000,2,[-1.6659247726913409, 0.0] (78/100)
+[7/9] completed
+CSV_ROW,0.500,2.000,1.000,2,[-1.3009242977488789, 1.292680639040689] (73/100) [H]
+[8/9] completed
+CSV_ROW,0.500,10.000,1.000,2,[-1.694071494111319, 0.0] (75/100)
+[9/9] completed
+==============================================================
+Summary (winners by cell): B=6  T=0  Q=0  N=3  A=0
+--- sample rows ---
+CSV_ROW,0.100,0.200,1.000,2,[-1.9092413770520191, 0.0]
+CSV_ROW,0.100,2.000,1.000,2,[-1.9027538137856015, 0.0]
+CSV_ROW,0.100,10.000,1.000,2,[-0.8266372113626815, 0.0]
+CSV_ROW,0.300,0.200,1.000,1,[0.0]
+CSV_ROW,0.300,2.000,1.000,1,[0.0]
+CSV_ROW,0.300,10.000,1.000,1,[0.0]
+CSV_ROW,0.500,0.200,1.000,2,[-1.6659247726913409, 0.0]
+CSV_ROW,0.500,2.000,1.000,2,[-1.3009242977488789, 1.292680639040689]
+Legend: B=binary(2), T=ternary(3), Q=quaternary(4), N=other discrete, A=analog/continuous

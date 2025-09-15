@@ -1,0 +1,243 @@
+{
+  "total_experiments": 23,
+  "total_combinations": 373,
+  "state_distribution": {
+    "2": 206,
+    "3": 57,
+    "1": 110
+  },
+  "continuous_ternary_rate": 0.0,
+  "discrete_ternary_rate": 1.0,
+  "binary_constraint_rate": 1.0,
+  "optimizer_consistency": true,
+  "experiments": {
+    "convergence_1000gen": {
+      "conditions": 8,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep     --sweep-allowed=continuous_only     --sweep-sigmas=0.1,0.3     --sweep-energy-zero=0.2,10.0     --sweep-energy-abs1=1.0     --sweep-gens=1000 --sweep-pop=40 --sweep-seeds=100     --energy-model=base     --sweep-optimizer=ga     --sweep-fitness=task     --sweep-stdout=summary",
+        "seeds": 100
+      }
+    },
+    "fitness_reg_base": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "reg",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=ga             --sweep-fitness=reg             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "cont_ga_base": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=ga             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "cont_ga_leak": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=leak             --sweep-optimizer=ga             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "leak"
+      }
+    },
+    "cont_cmaes_leak": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "cmaes",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=leak             --sweep-optimizer=cmaes             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "leak"
+      }
+    },
+    "binary_ga": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended         --sweep-allowed=binary_only         --sweep-sigmas=0.1,0.3,0.5         --sweep-energy-zero=0.2,2.0,10.0         --sweep-energy-abs1=1.0         --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100         --energy-model=base         --sweep-optimizer=ga         --sweep-fitness=task         --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "discrete_random": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "random",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended         --sweep-allowed=discrete_only         --sweep-sigmas=0.1,0.3,0.5         --sweep-energy-zero=0.2,2.0,10.0         --sweep-energy-abs1=1.0         --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100         --energy-model=base         --sweep-optimizer=random         --sweep-fitness=task         --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "fitness_reg_asym": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "reg",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=asym             --sweep-optimizer=ga             --sweep-fitness=reg             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "asym"
+      }
+    },
+    "fitness_task_leak": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=leak             --sweep-optimizer=ga             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "leak"
+      }
+    },
+    "binary_random": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "random",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended         --sweep-allowed=binary_only         --sweep-sigmas=0.1,0.3,0.5         --sweep-energy-zero=0.2,2.0,10.0         --sweep-energy-abs1=1.0         --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100         --energy-model=base         --sweep-optimizer=random         --sweep-fitness=task         --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "binary_cmaes": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "cmaes",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended         --sweep-allowed=binary_only         --sweep-sigmas=0.1,0.3,0.5         --sweep-energy-zero=0.2,2.0,10.0         --sweep-energy-abs1=1.0         --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100         --energy-model=base         --sweep-optimizer=cmaes         --sweep-fitness=task         --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "fitness_task_asym": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=asym             --sweep-optimizer=ga             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "asym"
+      }
+    },
+    "fitness_info_leak": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "info",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=leak             --sweep-optimizer=ga             --sweep-fitness=info             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "leak"
+      }
+    },
+    "fitness_info_base": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "info",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=ga             --sweep-fitness=info             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "cont_random_base": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "random",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=random             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "fitness_task_base": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=ga             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "discrete_cmaes": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "cmaes",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended         --sweep-allowed=discrete_only         --sweep-sigmas=0.1,0.3,0.5         --sweep-energy-zero=0.2,2.0,10.0         --sweep-energy-abs1=1.0         --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100         --energy-model=base         --sweep-optimizer=cmaes         --sweep-fitness=task         --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "cont_cmaes_base": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "cmaes",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=base             --sweep-optimizer=cmaes             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    },
+    "fitness_info_asym": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "info",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=asym             --sweep-optimizer=ga             --sweep-fitness=info             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "asym"
+      }
+    },
+    "fitness_reg_leak": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "reg",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=leak             --sweep-optimizer=ga             --sweep-fitness=reg             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "leak"
+      }
+    },
+    "convergence_pop200": {
+      "conditions": 8,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep     --sweep-allowed=continuous_only     --sweep-sigmas=0.1,0.3     --sweep-energy-zero=0.2,2.0     --sweep-energy-abs1=1.0     --sweep-gens=120 --sweep-pop=200 --sweep-seeds=100     --energy-model=base     --sweep-optimizer=ga     --sweep-fitness=task     --sweep-stdout=summary",
+        "seeds": 100
+      }
+    },
+    "cont_random_leak": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "random",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended             --sweep-allowed=continuous_only             --sweep-sigmas=0.1,0.3,0.5             --sweep-energy-zero=0.2,2.0,10.0             --sweep-energy-abs1=1.0             --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100             --energy-model=leak             --sweep-optimizer=random             --sweep-fitness=task             --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "leak"
+      }
+    },
+    "discrete_ga": {
+      "conditions": 17,
+      "metadata": {
+        "optimizer": "ga",
+        "fitness": "task",
+        "command": "Command: ./target/release/ai-ground-up sweep-extended         --sweep-allowed=discrete_only         --sweep-sigmas=0.1,0.3,0.5         --sweep-energy-zero=0.2,2.0,10.0         --sweep-energy-abs1=1.0         --sweep-gens=120 --sweep-pop=40 --sweep-seeds=100         --energy-model=base         --sweep-optimizer=ga         --sweep-fitness=task         --sweep-stdout=summary",
+        "seeds": 100,
+        "energy_model": "base"
+      }
+    }
+  }
+}

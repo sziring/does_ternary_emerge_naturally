@@ -1,0 +1,15 @@
+# Rust
+target/
+Cargo.lock
+
+
+# Generated graphs
+/*.dot
+/*.png
+/*.svg
+
+# Discovery
+/logs/
+/notes/
+
+
