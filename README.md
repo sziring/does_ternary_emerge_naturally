@@ -14,17 +14,22 @@ This research definitively demonstrates that **computational paradigms are const
 ## 🔬 Key Findings
 
 | Constraint Regime | Binary (%) | Ternary (%) | Unary (%) |
-|-------------------|------------|-------------|-----------|
+| ----------------- | ---------- | ----------- | --------- |
 | Continuous-only   | 55         | **0**       | 45        |
 | Binary-only       | **100**    | 0           | 0         |
 | Discrete-only     | 0          | **100**     | 0         |
 
 **Scientific Conclusion**: Binary computation's dominance reflects intrinsic optimization advantages under realistic physical constraints, not historical accident.
 
-**How we got here**
-This project began as a counterfactual thought experiment: what if an individual, armed with today’s AI tools, could have guided the earliest discoveries in computing? Starting with the foundational choices of logic gates, binary versus ternary representation, and the role of analog substrates, we asked whether alternative paths might have been discovered. Was binary chosen simply because it was easier to implement with mid-20th-century technology, or because it is inherently the most efficient paradigm? Could alternative architectures — ternary, analog, or hybrid — have produced more energy-efficient computation?
+## 🌍 Motivation
 
-These questions are not purely historical. Modern digital systems consume gigawatts globally, while the human brain achieves extraordinary computational capacity at approximately 20 watts. This contrast motivates revisiting the foundations of computational paradigms to understand whether binary dominance reflects deep optimization principles or contingent engineering choices.
+These questions remain relevant today. Modern digital-based computing systems consume gigawatts of power worldwide, while the analog human brain sustains extraordinary computational capacity at approximately 20 watts. This striking contrast motivates the investigation: was binary chosen because it was easiest to implement with 20th-century technology, or because it reflects a deeper optimization principle? Could alternative paradigms (ternary, analog) have enabled more efficient architectures?
+
+## 🧭 How We Got Here (narrative)
+
+This project began as a counterfactual thought experiment: what if an individual, armed with today’s AI tools, could have guided the earliest discoveries in computing? By revisiting the foundational decisions of digital logic—binary versus ternary representation, the role of analog substrates, and the design of logic gates—we asked whether alternative computational paths might have been viable. Was binary chosen because it was easiest to implement at the time, or because it reflects a deeper optimization principle? Could alternative paradigms, such as ternary or analog, have enabled more efficient architectures?
+
+To separate universal principles from historical path dependence, we systematically probed binary, ternary, and continuous systems via simulation—varying allowed function sets, energy models, noise levels, and optimizers—while filtering out artifacts (hysteresis, preset leaks, mutation bias). The results below summarize what we found.
 
 ## 🏗️ Architecture
 
